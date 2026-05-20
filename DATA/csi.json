@@ -237,3 +237,103 @@
     }
   }
 }
+{
+  "CSI010": {
+    "canonical_name": "Operational Continuity",
+    "definition": "The condition by which an existing semantic structure remains identifiable across successive execution states while events occur and internal structure changes.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "continuity_process",
+    "data_type": "process",
+    "aliases": [
+      "continuity",
+      "operational continuity",
+      "ongoing existence",
+      "continuidade",
+      "perduração"
+    ],
+    "principle": "A system may change while preserving identity, provided that its semantic structure remains traceable across states.",
+    "relations": {
+      "depends_on": ["CSI006", "CSI008", "CSI009"],
+      "produces": "CSI011",
+      "supports": "CSI012"
+    }
+  },
+
+  "CSI011": {
+    "canonical_name": "Event",
+    "definition": "A detectable occurrence during execution that changes, confirms, creates, interrupts, or updates the state of a semantic structure.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "state_change_marker",
+    "data_type": "event_object",
+    "aliases": [
+      "event",
+      "occurrence",
+      "happening",
+      "acontecimento",
+      "evento",
+      "ocorrência"
+    ],
+    "event_types": [
+      "creation",
+      "reading",
+      "writing",
+      "modification",
+      "confirmation",
+      "interruption",
+      "resumption",
+      "deletion",
+      "translation",
+      "rendering"
+    ],
+    "principle": "Computational time becomes meaningful when execution produces ordered events.",
+    "relations": {
+      "occurs_during": "CSI009",
+      "changes": "CSI007",
+      "may_update": "CSI008"
+    }
+  },
+
+  "CSI012": {
+    "canonical_name": "Growth",
+    "definition": "The progressive increase in semantic structure through the accumulation of valid concepts, relations, states, events, and persistent references.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "development_process",
+    "data_type": "semantic_process",
+    "aliases": [
+      "growth",
+      "development",
+      "expansion",
+      "maturation",
+      "crescimento",
+      "desenvolvimento",
+      "amadurecimento"
+    ],
+    "principle": "A semantic system grows when new structures are added without destroying the coherence of previous structures.",
+    "relations": {
+      "depends_on": ["CSI010", "CSI011"],
+      "expands": "CSI001",
+      "requires": "CSI005"
+    }
+  },
+
+  "CSI013": {
+    "canonical_name": "Temporal Awareness",
+    "definition": "The capacity of a system to distinguish previous, current, and subsequent states through ordered events, persistence, and traceable transformation.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "temporal_structure",
+    "data_type": "temporal_relation",
+    "aliases": [
+      "time awareness",
+      "temporal sequence",
+      "before and after",
+      "consciência temporal",
+      "sequência temporal"
+    ],
+    "principle": "Time is represented not only by clock measurement, but by ordered transformation between persistent states.",
+    "relations": {
+      "requires": ["CSI007", "CSI008", "CSI011"],
+      "orders": "CSI011",
+      "supports": "CSI012"
+    }
+  }
+}
