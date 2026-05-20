@@ -1005,3 +1005,100 @@
     }
   }
 }
+{
+  "CSI040": {
+    "canonical_name": "Semantic Field",
+    "definition": "A relational region of meaning formed by groups of associated words, concepts, symbols, or structures that collectively delimit interpretation.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "meaning_region",
+    "data_type": "semantic_cluster",
+    "principle": "Meaning emerges from relational proximity between associated structures rather than from isolated symbols.",
+    "examples": [
+      {
+        "field": [
+          "doctor",
+          "hospital",
+          "patient",
+          "medicine",
+          "treatment"
+        ],
+        "emergent_meaning": "healthcare"
+      },
+
+      {
+        "field": [
+          "house",
+          "family",
+          "room",
+          "kitchen",
+          "home"
+        ],
+        "emergent_meaning": "habitation"
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI037", "CSI038"],
+      "supports": "CSI041"
+    }
+  },
+
+  "CSI041": {
+    "canonical_name": "Semantic Equivalence",
+    "definition": "The relational condition in which different words, symbols, or structures occupy sufficiently similar semantic fields to permit translation or interpretive substitution.",
+    "domain": "Foundational Translation Semantics",
+    "semantic_type": "cross_context_mapping",
+    "data_type": "semantic_relation",
+    "principle": "Translation occurs when distinct symbolic structures converge toward sufficiently compatible semantic fields.",
+    "examples": [
+      {
+        "structure_A": "house",
+        "structure_B": "casa",
+        "shared_field": [
+          "habitation",
+          "family",
+          "living space",
+          "shelter"
+        ]
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI040"],
+      "supports": "CSI018",
+      "extends": "CSI005"
+    }
+  },
+
+  "CSI042": {
+    "canonical_name": "Semantic Delimitation",
+    "definition": "The process through which neighboring structures progressively constrain, stabilize, and refine the interpretation of a term or concept.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "interpretation_constraint",
+    "data_type": "semantic_process",
+    "principle": "Words gain meaning through contextual limitation imposed by surrounding structures.",
+    "examples": [
+      {
+        "term": "bank",
+        "context_A": [
+          "money",
+          "account",
+          "finance"
+        ],
+        "meaning": "financial institution"
+      },
+
+      {
+        "term": "bank",
+        "context_B": [
+          "river",
+          "water",
+          "shore"
+        ],
+        "meaning": "river edge"
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI037", "CSI040"],
+      "supports": "CSI041"
+    }
+  }
+}
