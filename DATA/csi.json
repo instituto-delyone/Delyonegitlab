@@ -611,3 +611,44 @@
   "principle": "A thought becomes computationally preservable when it is recorded as ordered semantic events.",
   "status": "conceptual_experiment"
 }
+{
+  "CSI029": {
+    "canonical_name": "Observable Quantity",
+    "definition": "A perceptible difference in occupied semantic space produced by the accumulation of distinguishable units within a bounded structure.",
+    "domain": "Foundational Mathematics",
+    "semantic_type": "observable_magnitude",
+    "data_type": "structured_quantity",
+    "principle": "Quantity is first perceived through observable accumulation before symbolic numerical representation emerges.",
+    "examples": [
+      {
+        "structure": "[ •• ]",
+        "observation": "A bounded structure containing two observable units."
+      },
+      {
+        "structure": "[ ••••• ]",
+        "observation": "A bounded structure containing five observable units."
+      },
+      {
+        "comparison": "[ ••••• ] > [ •• ]",
+        "observation": "The structure containing five observable units occupies greater quantity than the structure containing two observable units."
+      },
+      {
+        "symbolic_mapping": "[ •• ] = 2"
+      },
+      {
+        "symbolic_mapping": "[ ••••• ] = 5"
+      },
+      {
+        "relational_mapping": "5 > 2"
+      }
+    ],
+    "semantic_progression": [
+      "observable accumulation",
+      "bounded structure",
+      "quantity perception",
+      "comparison",
+      "symbolic representation",
+      "abstract mathematics"
+    ]
+  }
+}
