@@ -917,3 +917,91 @@
     }
   }
 }
+{
+  "CSI037": {
+    "canonical_name": "Semantic Context",
+    "definition": "Meaning emerges from the relational distribution of terms, symbols, structures, and experiences across repeated contextual associations.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "contextual_meaning_system",
+    "data_type": "semantic_distribution",
+    "principle": "A term does not possess isolated meaning independent of context. Meaning emerges through repeated relational association.",
+    "examples": [
+      {
+        "term": "plate",
+        "associated_terms": [
+          "food",
+          "restaurant",
+          "eat",
+          "kitchen"
+        ],
+        "emergent_context": "nutrition"
+      },
+
+      {
+        "term": "body_part",
+        "associated_terms": [
+          "plate",
+          "food",
+          "restaurant",
+          "eat"
+        ],
+        "observation": "Repeated contextual proximity may alter semantic interpretation."
+      }
+    ],
+    "semantic_principles": [
+      "Meaning changes through repetition.",
+      "Meaning depends on neighboring structures.",
+      "Meaning stabilizes through persistent relational usage.",
+      "Language evolves through accumulated contextual association."
+    ],
+    "relations": {
+      "depends_on": ["CSI004", "CSI005", "CSI011", "CSI020"],
+      "supports": "CSI016",
+      "extends": "CSI001"
+    }
+  },
+
+  "CSI038": {
+    "canonical_name": "Semantic Group",
+    "definition": "A cluster of terms, structures, or concepts that acquire related meaning through persistent contextual proximity and relational reinforcement.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "semantic_cluster",
+    "data_type": "grouped_context",
+    "principle": "Semantic groups emerge when repeated contextual association stabilizes relational interpretation.",
+    "examples": [
+      {
+        "group": [
+          "doctor",
+          "hospital",
+          "patient",
+          "medicine"
+        ],
+        "emergent_domain": "healthcare"
+      },
+
+      {
+        "group": [
+          "clock",
+          "hours",
+          "sleep",
+          "aging"
+        ],
+        "emergent_domain": "human temporality"
+      }
+    ]
+  },
+
+  "CSI039": {
+    "canonical_name": "Semantic Reinforcement",
+    "definition": "The progressive stabilization of meaning through repeated contextual exposure and persistent relational usage across time.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "meaning_stabilization_process",
+    "data_type": "reinforcement_process",
+    "principle": "Repeated contextual association increases probability of semantic stabilization.",
+    "relations": {
+      "depends_on": ["CSI037", "CSI038"],
+      "supports": "CSI008",
+      "influences": "CSI001"
+    }
+  }
+}
