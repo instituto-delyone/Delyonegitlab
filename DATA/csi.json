@@ -138,3 +138,102 @@
     }
   }
 }
+{
+  "CSI006": {
+    "canonical_name": "Existence",
+    "definition": "The condition by which a semantic unit is recognized as present, valid, and capable of being referenced within a system, regardless of whether it is currently visible, active, or being rendered.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "ontological_state",
+    "data_type": "semantic_state",
+    "aliases": [
+      "existence",
+      "being",
+      "presence",
+      "existência",
+      "ser",
+      "presença"
+    ],
+    "principle": "A semantic unit may continue to exist even when it is not currently visible or active.",
+    "relations": {
+      "depends_on": ["CSI000", "CSI001"],
+      "may_be_expressed_as": "CSI007",
+      "may_persist_through": "CSI008"
+    }
+  },
+
+  "CSI007": {
+    "canonical_name": "State",
+    "definition": "A temporary or persistent condition of a semantic unit at a given moment of interpretation, execution, storage, or transformation.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "condition_marker",
+    "data_type": "state_object",
+    "aliases": [
+      "state",
+      "status",
+      "condition",
+      "estado",
+      "condição"
+    ],
+    "state_types": [
+      "stored",
+      "inactive",
+      "active",
+      "running",
+      "visible",
+      "hidden",
+      "modified",
+      "resolved",
+      "unresolved"
+    ],
+    "relations": {
+      "describes": "CSI001",
+      "requires_existence": "CSI006"
+    }
+  },
+
+  "CSI008": {
+    "canonical_name": "Persistence",
+    "definition": "The capacity of a semantic unit to preserve its identity across time, interruption, transformation, storage, invisibility, or changes in representation.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "continuity_property",
+    "data_type": "semantic_property",
+    "aliases": [
+      "persistence",
+      "continuity",
+      "memory",
+      "permanence",
+      "persistência",
+      "continuidade",
+      "memória"
+    ],
+    "principle": "A concept does not cease to exist merely because it is not currently being displayed or executed.",
+    "relations": {
+      "preserves": "CSI001",
+      "stabilizes": "CSI006",
+      "supports": "CSI009"
+    }
+  },
+
+  "CSI009": {
+    "canonical_name": "Execution",
+    "definition": "The activation of a stored structure into an operational process capable of producing state changes, outputs, interpretations, or transformations.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "activation_process",
+    "data_type": "process",
+    "aliases": [
+      "execution",
+      "running",
+      "activation",
+      "process",
+      "execução",
+      "rodando",
+      "ativação"
+    ],
+    "principle": "While stored code may preserve structure, execution is what allows events, transformations, and computational time to occur.",
+    "relations": {
+      "activates": "CSI001",
+      "changes": "CSI007",
+      "requires": "CSI008"
+    }
+  }
+}
