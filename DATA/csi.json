@@ -652,3 +652,72 @@
     ]
   }
 }
+{
+  "CSI030": {
+    "canonical_name": "Decimal Sequence",
+    "definition": "An ordered numerical progression based on ten fundamental symbols, where each next value represents one additional unit in relation to the previous value.",
+    "domain": "Foundational Mathematics",
+    "semantic_type": "ordered_quantity_sequence",
+    "data_type": "numerical_structure",
+    "principle": "A number gains meaning through its position in an ordered sequence and through its relation to previous and subsequent quantities.",
+    "sequence": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "basic_order": [
+      "1 > 0",
+      "2 > 1",
+      "3 > 2",
+      "4 > 3",
+      "5 > 4",
+      "6 > 5",
+      "7 > 6",
+      "8 > 7",
+      "9 > 8",
+      "10 > 9"
+    ],
+    "comparison_examples": [
+      {
+        "statement": "8 > 2",
+        "meaning": "Eight represents six additional units beyond two."
+      },
+      {
+        "statement": "5 > 3",
+        "meaning": "Five represents two additional units beyond three."
+      },
+      {
+        "statement": "2 < 8",
+        "meaning": "Two represents fewer units than eight."
+      }
+    ],
+    "decimal_base": {
+      "base": 10,
+      "symbols": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "principle": "In base 10, when counting passes 9, the rightmost position returns to 0 and one unit is carried to the next position on the left.",
+      "transition_example": {
+        "from": "9",
+        "add_one": "1",
+        "result": "10",
+        "meaning": "The symbol 10 means one group of ten and zero remaining units in the first position."
+      },
+      "place_value": {
+        "10": "one ten and zero ones",
+        "20": "two tens and zero ones",
+        "30": "three tens and zero ones",
+        "100": "one hundred, or ten groups of ten"
+      }
+    },
+    "zero": {
+      "symbol": "0",
+      "definition": "The symbol used to represent absence of observable quantity within a defined context.",
+      "principle": "Zero does not mean universal nonexistence; it means no counted unit is present in the measured position or context.",
+      "examples": [
+        "0 units inside a field",
+        "10 means one ten and zero ones",
+        "20 means two tens and zero ones"
+      ]
+    },
+    "relations": {
+      "extends": "CSI029",
+      "supports": "CSI022",
+      "enables": "CSI023"
+    }
+  }
+}
