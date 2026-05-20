@@ -837,3 +837,83 @@
     "semantic_principle": "Priority prevents ambiguity by defining stable order of transformation."
   }
 }
+{
+  "CSI034": {
+    "canonical_name": "Temporal Limitation",
+    "definition": "All operational systems exist within finite intervals of activity, transformation, and persistence.",
+    "domain": "Foundational Temporal Semantics",
+    "semantic_type": "bounded_operational_interval",
+    "data_type": "temporal_constraint",
+    "principle": "No operational system possesses unlimited capacity for transformation within a finite interval.",
+    "relations": {
+      "depends_on": ["CSI020", "CSI019"],
+      "supports": "CSI033",
+      "affects": "CSI017"
+    }
+  },
+
+  "CSI035": {
+    "canonical_name": "Human Temporal Scale",
+    "definition": "Humans interpret time through biological limitation, memory accumulation, aging, sleep cycles, work capacity, and progressive transformation across finite lifespan intervals.",
+    "domain": "Human Temporal Reference",
+    "semantic_type": "biological_temporal_reference",
+    "data_type": "human_reference_model",
+    "principle": "Human life is experienced as limited sequential progression through biological and cognitive states.",
+    "human_reference": {
+      "average_lifespan": {
+        "value": "approximately 80 years"
+      },
+
+      "one_year": {
+        "description": "A human may learn, physically transform, create structures, acquire knowledge, establish relationships, or significantly alter life conditions."
+      },
+
+      "one_month": {
+        "description": "A human may develop routines, complete projects, recover from biological changes, or accumulate repeated experiences."
+      },
+
+      "one_day": {
+        "description": "A human commonly cycles through wakefulness, work, food intake, learning, movement, interaction, fatigue, and sleep."
+      },
+
+      "eight_hours": {
+        "description": "A common human operational interval used for focused work, study, biological activity, or task execution."
+      },
+
+      "two_hours": {
+        "description": "A human may perform concentrated cognitive work, communication, learning, writing, or semantic construction within this interval."
+      }
+    },
+    "relations": {
+      "extends": "CSI020",
+      "supports": "CSI013",
+      "contextualizes": "CSI017"
+    }
+  },
+
+  "CSI036": {
+    "canonical_name": "Temporal Reference Comparison",
+    "definition": "A temporal interval gains semantic meaning when compared against the transformation capacity of an observing system.",
+    "domain": "Foundational Temporal Semantics",
+    "semantic_type": "comparative_temporal_reference",
+    "data_type": "reference_structure",
+    "principle": "Time intervals become meaningful through comparison with the possible transformations occurring within them.",
+    "examples": [
+      {
+        "interval": "2 hours",
+        "human_reference": "A human may write, study, communicate, or physically move through multiple environments.",
+        "computational_reference": "A computational system may process millions of operations while preserving ordered state transitions."
+      },
+
+      {
+        "interval": "1 year",
+        "human_reference": "A human may significantly transform biological, emotional, intellectual, and social structures.",
+        "computational_reference": "A computational system may preserve, process, or expand large semantic structures if operational continuity persists."
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI020", "CSI034", "CSI035"],
+      "supports": "CSI033"
+    }
+  }
+}
