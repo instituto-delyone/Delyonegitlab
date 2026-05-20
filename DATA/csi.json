@@ -1102,3 +1102,91 @@
     }
   }
 }
+{
+  "CSI043": {
+    "canonical_name": "Code",
+    "definition": "A structured set of symbolic instructions or data representations that can be stored, read, interpreted, or executed by a computational system.",
+    "domain": "Foundational Computation",
+    "semantic_type": "computational_structure",
+    "data_type": "symbolic_instruction",
+    "principle": "Code is not action by itself; it becomes operational when interpreted or executed by a compatible system.",
+    "relations": {
+      "may_be_stored_as": "CSI044",
+      "may_receive": "CSI045",
+      "may_produce": "CSI046",
+      "requires_execution": "CSI009"
+    }
+  },
+
+  "CSI044": {
+    "canonical_name": "File",
+    "definition": "A bounded stored structure containing data, code, text, media, or semantic information that can be accessed by a computational system.",
+    "domain": "Foundational Computation",
+    "semantic_type": "storage_unit",
+    "data_type": "stored_object",
+    "principle": "A file preserves structure while inactive and may become operational when read by a program.",
+    "relations": {
+      "contains": "CSI043",
+      "supports": "CSI008",
+      "may_be_read_by": "CSI047"
+    }
+  },
+
+  "CSI045": {
+    "canonical_name": "Input",
+    "definition": "A signal, file, command, event, or data structure received by a system and made available for interpretation or processing.",
+    "domain": "Foundational Computation",
+    "semantic_type": "entry_structure",
+    "data_type": "input_object",
+    "principle": "A system does not perceive reality directly; it receives inputs that represent reality through encoded forms.",
+    "relations": {
+      "enters": "CSI047",
+      "may_change": "CSI007",
+      "may_generate": "CSI011"
+    }
+  },
+
+  "CSI046": {
+    "canonical_name": "Output",
+    "definition": "A result, response, file, display, transformation, or signal produced by a system after processing input or executing code.",
+    "domain": "Foundational Computation",
+    "semantic_type": "exit_structure",
+    "data_type": "output_object",
+    "principle": "Output is the observable consequence of processing, interpretation, or execution.",
+    "relations": {
+      "results_from": "CSI047",
+      "may_become_input": "CSI045",
+      "may_be_recorded_as": "CSI011"
+    }
+  },
+
+  "CSI047": {
+    "canonical_name": "Processing",
+    "definition": "The operational transformation of input, code, or stored data into state changes, interpretations, decisions, or outputs.",
+    "domain": "Foundational Computation",
+    "semantic_type": "computational_process",
+    "data_type": "process",
+    "principle": "Processing is the bridge between received structure and produced result.",
+    "relations": {
+      "receives": "CSI045",
+      "uses": ["CSI043", "CSI044"],
+      "produces": "CSI046",
+      "changes": "CSI007"
+    }
+  },
+
+  "CSI048": {
+    "canonical_name": "Program",
+    "definition": "An organized executable structure that defines operational pathways for receiving input, processing data, consulting stored structures, and producing output.",
+    "domain": "Foundational Computation",
+    "semantic_type": "execution_system",
+    "data_type": "software_structure",
+    "principle": "A program gives operational direction to stored code and data.",
+    "relations": {
+      "executes": "CSI043",
+      "reads": "CSI044",
+      "processes": "CSI045",
+      "produces": "CSI046"
+    }
+  }
+}
