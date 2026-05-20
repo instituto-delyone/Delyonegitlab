@@ -1253,3 +1253,109 @@
     }
   ]
 }
+{
+  "CSI043": {
+    "canonical_name": "Human Language",
+    "definition": "A structured system of symbols, sounds, words, rules, conventions, and contextual meanings used by human groups to communicate, preserve, transform, and transmit experience.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "human_symbolic_system",
+    "data_type": "language_structure",
+    "principle": "Languages are specific cultural and historical implementations of the broader capacity for language.",
+    "relations": {
+      "depends_on": ["CSI001", "CSI002", "CSI003", "CSI037", "CSI040"],
+      "supports": "CSI044"
+    }
+  },
+
+  "CSI044": {
+    "canonical_name": "Natural Language",
+    "definition": "A human language developed through social use, historical accumulation, cultural convention, repetition, and contextual adaptation.",
+    "domain": "Foundational Language Semantics",
+    "semantic_type": "natural_language_system",
+    "data_type": "linguistic_system",
+    "examples": [
+      "Portuguese",
+      "English",
+      "Spanish",
+      "Italian",
+      "French"
+    ],
+    "principle": "A natural language is not only a vocabulary; it is a living system of use, context, grammar, memory, and pragmatic intention.",
+    "relations": {
+      "extends": "CSI043",
+      "supports": "CSI045"
+    }
+  },
+
+  "CSI045": {
+    "canonical_name": "Language Mapping",
+    "definition": "The process of connecting expressions from different languages to shared semantic fields or equivalent conceptual structures.",
+    "domain": "Foundational Translation Semantics",
+    "semantic_type": "cross_language_mapping",
+    "data_type": "semantic_mapping",
+    "principle": "Translation occurs when different linguistic expressions are connected to sufficiently compatible semantic fields.",
+    "examples": [
+      {
+        "english": "patient name",
+        "portuguese": "nome do paciente",
+        "semantic_reference": "CSI001"
+      },
+      {
+        "english": "diagnosis",
+        "portuguese": "diagnóstico",
+        "semantic_reference": "clinical_diagnosis_field"
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI040", "CSI041", "CSI042"],
+      "supports": "CSI046"
+    }
+  },
+
+  "CSI046": {
+    "canonical_name": "Operational Language Layer",
+    "definition": "The language actually used by a project, form, interface, document, or institution during practical execution.",
+    "domain": "Applied Language Semantics",
+    "semantic_type": "operational_language_context",
+    "data_type": "language_context",
+    "principle": "A system may be structurally defined in one language while operating, receiving input, or generating output in another.",
+    "examples": [
+      {
+        "core_language": "English",
+        "operational_language": "Portuguese",
+        "use_case": "Brazilian medical forms"
+      }
+    ],
+    "relations": {
+      "depends_on": ["CSI043", "CSI044", "CSI045"],
+      "supports": "CSI047"
+    }
+  },
+
+  "CSI047": {
+    "canonical_name": "Portuguese Operational Layer",
+    "definition": "A Portuguese-language operational layer used to map Brazilian medical, administrative, and institutional expressions to stable CSI semantic references.",
+    "domain": "Applied Language Semantics",
+    "semantic_type": "portuguese_mapping_layer",
+    "data_type": "language_alias_layer",
+    "principle": "Portuguese terms used in forms, documents, and clinical practice may be mapped to CSI concepts without changing the underlying semantic structure.",
+    "examples": [
+      {
+        "term": "nome do paciente",
+        "maps_to": "CSI001"
+      },
+      {
+        "term": "data de nascimento",
+        "maps_to": "birth_date_semantic_field"
+      },
+      {
+        "term": "sinais e sintomas",
+        "maps_to": "clinical_presentation_semantic_field"
+      }
+    ],
+    "relations": {
+      "extends": "CSI046",
+      "enables": "Brazilian medical document interoperability"
+    }
+  }
+}
