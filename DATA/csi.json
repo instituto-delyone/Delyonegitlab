@@ -548,3 +548,57 @@
     "principle_of_progression": "As time progresses, events accumulate. As events accumulate, structures may transform, mature, expand, or degrade while maintaining traceable continuity."
   }
 }
+"examples": [
+  {
+    "experiment": "Temporal Writing Experiment",
+    "description": "A human subject records thoughts continuously while observing temporal progression, language shifts, and semantic persistence across sequential CSI021 — Temporal Semantic Recording
+  }
+]
+CSI021 — Temporal Semantic Recording
+{
+  "experiment_id": "TEMPORAL_WRITING_EXPERIMENT_V0_1",
+  "title": "Temporal Writing Experiment",
+  "created_by": "Delyone de Paula Canedo Filho",
+  "purpose": "To observe how meaning, language, and self-recording evolve during continuous writing across measurable time.",
+  "core_question": "How does a semantic structure change when a human records thought while time passes?",
+  "initial_state": {
+    "time_marker": "00:17",
+    "language": "English",
+    "state": "spontaneous writing begins",
+    "description": "The author starts writing freely to test the limits of creative and semantic flow."
+  },
+  "events": [
+    {
+      "time_marker": "00:18",
+      "event_type": "language_shift",
+      "language": "Portuguese",
+      "description": "The author switches to Portuguese to compare expression, speed, and linguistic comfort."
+    },
+    {
+      "time_marker": "00:19",
+      "event_type": "chronometer_activation",
+      "description": "A chronometer is started to create an external temporal reference."
+    },
+    {
+      "time_marker": "03:40",
+      "event_type": "elapsed_time_observation",
+      "description": "The author observes that 3 minutes and 40 seconds have passed since the previous temporal registration."
+    }
+  ],
+  "semantic_observations": {
+    "time": "Time is perceived as ordered progression between recorded states.",
+    "language": "Language changes the rhythm and texture of thought.",
+    "writing": "Writing becomes a trace of cognition during execution.",
+    "continuity": "The author remains identifiable across language shifts and temporal markers.",
+    "self_reference": "The experiment records not only content, but the process of content emerging."
+  },
+  "csi_links": {
+    "CSI011": "Event",
+    "CSI013": "Temporal Awareness",
+    "CSI020": "Time",
+    "CSI019": "Progressive Maturation",
+    "CSI016": "Symbiotic Language"
+  },
+  "principle": "A thought becomes computationally preservable when it is recorded as ordered semantic events.",
+  "status": "conceptual_experiment"
+}
