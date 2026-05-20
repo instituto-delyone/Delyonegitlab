@@ -1190,3 +1190,66 @@
     }
   }
 }
+{
+  "PROJECT_PURPOSE": {
+    "project_name": "CSI — Classificação Semiológica Internacional",
+    "primary_objective": "To create a modular semantic foundation capable of supporting future projects developed by the Instituto de Medicina e Tecnologia Dr. Delyone, enabling structured interpretation, transformation, connection, and reuse of information across documents, systems, languages, and contexts.",
+
+    "core_problem": "Most digital systems treat files, forms, documents, interfaces, and knowledge structures as isolated entities. This fragmentation reduces interoperability, increases repeated work, limits modular growth, and causes semantic loss between systems.",
+
+    "core_solution": "CSI proposes a minimal semantic nucleus capable of connecting concepts, structures, files, templates, interfaces, and domains through stable relational semantics, contextual interpretation, modular expansion, and persistent operational continuity.",
+
+    "initial_application": [
+      "medical document structuring",
+      "PDF and DOCX template mapping",
+      "clinical form interpretation",
+      "semantic field indexing",
+      "cross-document information reuse",
+      "contextual healthcare automation"
+    ],
+
+    "long_term_application": [
+      "modular institutional software architecture",
+      "semantic interoperability between projects",
+      "contextual translation systems",
+      "language meta-engineering",
+      "knowledge preservation",
+      "semantic memory structures",
+      "cross-domain computational interpretation"
+    ],
+
+    "principle": "The system does not begin from interface design. It begins from meaning, structure, relation, continuity, and contextual interpretation.",
+
+    "architectural_principle": "Interfaces, applications, templates, and operational systems emerge as modular expressions of an underlying semantic structure.",
+
+    "institutional_role": "CSI is intended to function as a foundational semantic layer for future tools, systems, research platforms, educational structures, medical technologies, and modular architectures developed by the Institute.",
+
+    "development_model": {
+      "phase_1": "semantic foundation",
+      "phase_2": "modular operational structures",
+      "phase_3": "persistent contextual memory",
+      "phase_4": "adaptive semantic interoperability"
+    },
+
+    "foundational_observation": "Meaning is not isolated inside symbols. Meaning emerges through relational context, persistence, repetition, temporal continuity, and semantic interaction.",
+
+    "status": "foundational_semantic_core"
+  }
+}
+"CSI043": {
+  "canonical_name": "Pragmatic Function",
+  "definition": "The operational purpose of an expression beyond its literal content, including warning, softening, invitation, refusal, emphasis, protection, or social regulation.",
+  "principle": "Human language often encodes intention indirectly through tone, context, probability markers, and relational history.",
+  "examples": [
+    {
+      "expression": "Maybe we should look at this first.",
+      "literal_content": "uncertain suggestion",
+      "pragmatic_function": [
+        "soft warning",
+        "priority signal",
+        "risk reduction",
+        "non-impositional guidance"
+      ]
+    }
+  ]
+}
