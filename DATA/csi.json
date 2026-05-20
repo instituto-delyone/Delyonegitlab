@@ -721,3 +721,119 @@
     }
   }
 }
+{
+  "CSI031": {
+    "canonical_name": "Mathematical Operators",
+    "definition": "Symbols used to represent transformations, relations, comparisons, or operations between quantities, structures, or expressions.",
+    "domain": "Foundational Mathematics",
+    "semantic_type": "symbolic_operator_system",
+    "data_type": "operator_collection",
+    "principle": "Operators describe how quantities and structures interact, transform, combine, separate, or compare.",
+    "operators": {
+      "+": {
+        "canonical_name": "Addition",
+        "definition": "Combining quantities into a larger quantity.",
+        "examples": [
+          "• + • = ••",
+          "1 + 1 = 2",
+          "2 + 3 = 5"
+        ],
+        "semantic_principle": "Addition increases observable quantity."
+      },
+
+      "-": {
+        "canonical_name": "Subtraction",
+        "definition": "Removing quantity from another quantity.",
+        "examples": [
+          "••• - • = ••",
+          "5 - 2 = 3",
+          "2 - 5 = -3"
+        ],
+        "semantic_principle": "Subtraction decreases observable quantity or produces deficit when required quantity exceeds available quantity."
+      },
+
+      "*": {
+        "canonical_name": "Multiplication",
+        "definition": "Repeated addition of equivalent quantities.",
+        "examples": [
+          "2 * 3 = 6",
+          "3 * 3 = 9"
+        ],
+        "semantic_principle": "Multiplication represents grouped repetition."
+      },
+
+      "/": {
+        "canonical_name": "Division",
+        "definition": "Separating a quantity into equal groups or determining how many times one quantity fits inside another.",
+        "examples": [
+          "6 / 2 = 3",
+          "10 / 5 = 2"
+        ],
+        "semantic_principle": "Division distributes quantity proportionally."
+      },
+
+      "=": {
+        "canonical_name": "Equality",
+        "definition": "Two structures represent equivalent quantity or value.",
+        "examples": [
+          "2 = 2",
+          "•• = 2"
+        ]
+      },
+
+      ">": {
+        "canonical_name": "Greater Than",
+        "definition": "The quantity on the left contains more units than the quantity on the right.",
+        "examples": [
+          "5 > 2",
+          "8 > 3"
+        ]
+      },
+
+      "<": {
+        "canonical_name": "Less Than",
+        "definition": "The quantity on the left contains fewer units than the quantity on the right.",
+        "examples": [
+          "2 < 5",
+          "3 < 8"
+        ]
+      }
+    }
+  },
+
+  "CSI032": {
+    "canonical_name": "Expression",
+    "definition": "A structured arrangement of quantities and operators representing a logical or mathematical transformation.",
+    "domain": "Foundational Mathematics",
+    "semantic_type": "structured_operation",
+    "data_type": "expression",
+    "examples": [
+      "2 + 3",
+      "5 * 2 + 3",
+      "(2 + 5) * 2"
+    ],
+    "principle": "Expressions represent ordered transformations between quantities and structures."
+  },
+
+  "CSI033": {
+    "canonical_name": "Operational Priority",
+    "definition": "The ordered rule system determining which operations inside an expression must be resolved before others.",
+    "domain": "Foundational Mathematics",
+    "semantic_type": "resolution_hierarchy",
+    "data_type": "priority_rule",
+    "principle": "Certain operations must be resolved before others in order to preserve consistent interpretation.",
+    "priority_order": [
+      "Parentheses",
+      "Multiplication and Division",
+      "Addition and Subtraction"
+    ],
+    "example": {
+      "expression": "2 + 5 * 2 + 3",
+      "step_1": "5 * 2 = 10",
+      "step_2": "2 + 10 + 3",
+      "step_3": "12 + 3",
+      "step_4": "15"
+    },
+    "semantic_principle": "Priority prevents ambiguity by defining stable order of transformation."
+  }
+}
