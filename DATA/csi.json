@@ -1,0 +1,18 @@
+{
+  "CSI000": {
+    "canonical_name": "Semantic Key",
+    "definition": "A foundational structure used to identify, preserve, relate, and translate meaning across different languages, systems, documents, and representations.",
+    "principle": "Meaning precedes format.",
+    "machine_role": "Defines how a semantic unit can be represented as data.",
+    "human_role": "Defines what the data is intended to mean.",
+    "structure": {
+      "id": "stable semantic identifier",
+      "canonical_name": "preferred conceptual name",
+      "definition": "precise meaning of the concept",
+      "aliases": "known surface forms",
+      "relations": "connections to other semantic units",
+      "examples": "valid instances",
+      "exclusions": "what this concept is not"
+    }
+  }
+}
