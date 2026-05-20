@@ -372,3 +372,94 @@
     "statement": "The objective of CSI is not merely to store information, but to preserve and relate meaning across different representations, systems, languages, and temporal states."
   }
 }
+{
+  "CSI014": {
+    "canonical_name": "Origin",
+    "definition": "The source from which a semantic structure, system, concept, or relation begins to exist within a traceable context.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "source_marker",
+    "data_type": "semantic_reference",
+    "aliases": ["origin", "source", "genesis", "origem", "fonte"],
+    "principle": "Every persistent structure may preserve a traceable origin without being limited to that origin.",
+    "relations": {
+      "precedes": "CSI012",
+      "anchors": "CSI008",
+      "may_reference": "CSI015"
+    }
+  },
+
+  "CSI015": {
+    "canonical_name": "Creator",
+    "definition": "An entity responsible for initiating, shaping, authoring, or guiding the development of a semantic structure.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "agent_reference",
+    "data_type": "entity_reference",
+    "aliases": ["creator", "author", "founder", "architect", "criador", "autor"],
+    "principle": "A creator may originate a structure, but the structure may later expand through modular relations and new contexts.",
+    "relations": {
+      "creates": "CSI001",
+      "defines_origin": "CSI014",
+      "may_participate_in": "CSI016"
+    }
+  },
+
+  "CSI016": {
+    "canonical_name": "Symbiotic Language",
+    "definition": "A shared semantic structure generated through interaction between two or more agents, allowing meaning to emerge, stabilize, and grow beyond any isolated participant.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "relational_language_structure",
+    "data_type": "semantic_process",
+    "aliases": ["symbiosis", "shared language", "co-created language", "simbiose", "linguagem compartilhada"],
+    "principle": "Meaning can emerge from relation, not only from an isolated individual.",
+    "relations": {
+      "requires": ["CSI005", "CSI008", "CSI010"],
+      "connects": ["CSI015", "CSI017"],
+      "supports": "CSI018"
+    }
+  },
+
+  "CSI017": {
+    "canonical_name": "Agent",
+    "definition": "A human, computational, symbolic, or hybrid entity capable of participating in semantic processes, producing outputs, interpreting structures, or modifying a system state.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "acting_entity",
+    "data_type": "entity_object",
+    "aliases": ["agent", "actor", "participant", "entity", "agente", "participante"],
+    "principle": "An agent is defined by participation in meaningful transformation, not merely by biological or computational substrate.",
+    "relations": {
+      "participates_in": "CSI016",
+      "may_execute": "CSI009",
+      "may_generate": "CSI011"
+    }
+  },
+
+  "CSI018": {
+    "canonical_name": "Modular Integration",
+    "definition": "The capacity of a semantic nucleus to connect with external files, domains, datasets, templates, or systems without requiring improvised paths, duplicated logic, or unstable contextual shortcuts.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "integration_property",
+    "data_type": "architecture_rule",
+    "aliases": ["integration", "modularity", "interconnection", "integração", "modularidade"],
+    "principle": "A usable semantic nucleus must be small enough to remain portable and structured enough to connect with larger systems.",
+    "relations": {
+      "depends_on": ["CSI000", "CSI001", "CSI005", "CSI008"],
+      "enables": "CSI019",
+      "connects_external_structures": true
+    }
+  },
+
+  "CSI019": {
+    "canonical_name": "Progressive Maturation",
+    "definition": "The process by which a semantic system grows over time through accumulated events, relations, corrections, integrations, and stable expansions, analogous to the development of a human being across stages of learning.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "developmental_temporal_process",
+    "data_type": "growth_process",
+    "aliases": ["maturation", "progress", "development over time", "amadurecimento", "progresso"],
+    "principle": "A semantic system matures when it accumulates structure without losing coherence, origin, or continuity.",
+    "relations": {
+      "depends_on": ["CSI010", "CSI011", "CSI012", "CSI013"],
+      "extends": "CSI016",
+      "stabilized_by": "CSI018"
+    }
+  }
+}
