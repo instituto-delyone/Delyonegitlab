@@ -337,3 +337,38 @@
     }
   }
 }
+{
+  "CSI_AUTHOR": {
+    "name": "Delyone de Paula Canedo Filho",
+    "nationality": "Brazilian",
+    "profession": "Medical Doctor",
+    "role": "Independent Researcher and Language Meta-Engineer",
+    "project": "CSI — Classificação Semiológica Internacional",
+    "origin": "Brazil",
+    "definition": "The CSI project is a foundational semantic engineering structure created to investigate, preserve, relate, translate, and expand meaning across multiple forms of language, representation, systems, and contexts.",
+    "purpose": [
+      "semantic interoperability",
+      "language abstraction",
+      "context translation",
+      "persistent meaning representation",
+      "modular semantic growth",
+      "computational understanding of structured language"
+    ],
+    "principle": "Meaning precedes representation.",
+    "architectural_vision": "CSI is designed as a minimal foundational semantic nucleus capable of supporting modular expansion, contextual adaptation, and progressive integration of new semantic domains without losing structural coherence.",
+    "scope": {
+      "human_language": true,
+      "computational_language": true,
+      "clinical_language": true,
+      "symbolic_language": true,
+      "cross_context_interpretation": true
+    },
+    "structural_model": {
+      "core": "minimal semantic nucleus",
+      "expansion": "modular branches",
+      "growth": "persistent semantic accumulation",
+      "adaptation": "cross-system compatibility"
+    },
+    "statement": "The objective of CSI is not merely to store information, but to preserve and relate meaning across different representations, systems, languages, and temporal states."
+  }
+}
