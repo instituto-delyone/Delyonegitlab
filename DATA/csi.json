@@ -551,10 +551,19 @@
 "examples": [
   {
     "experiment": "Temporal Writing Experiment",
-    "description": "A human subject records thoughts continuously while observing temporal progression, language shifts, and semantic persistence across sequential CSI021 — Temporal Semantic Recording
+    "description": "A human subject records thoughts continuously while observing temporal progression, language shifts, and semantic persistence across sequential
   }
 ]
-CSI021 — Temporal Semantic Recording
+"examples": [
+  {
+    "experiment": "Temporal Writing Experiment",
+    "description": "A human subject records thoughts continuously while observing temporal progression, language shifts, and semantic persistence across sequential events."
+  }
+],
+
+"CSI021": {
+  "canonical_name": "Temporal Semantic Recording",
+  "experiment_id": "TEMPORAL_WRITING_EXPERIMENT_V0_1",
 {
   "experiment_id": "TEMPORAL_WRITING_EXPERIMENT_V0_1",
   "title": "Temporal Writing Experiment",
