@@ -16,3 +16,125 @@
     }
   }
 }
+{
+  "CSI000": {
+    "canonical_name": "Semantic Key",
+    "definition": "A foundational structure used to identify, preserve, relate, and translate meaning across different languages, systems, documents, and representations.",
+    "principle": "Meaning precedes format."
+  },
+
+  "CSI001": {
+    "canonical_name": "Concept",
+    "definition": "A stable unit of meaning that can be named, represented, related, translated, stored, or transformed without losing its semantic identity.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "abstract_unit",
+    "data_type": "semantic_object",
+    "aliases": [
+      "concept",
+      "idea",
+      "meaning unit",
+      "conceito",
+      "ideia"
+    ],
+    "relations": {
+      "depends_on": ["CSI000"],
+      "can_receive_name": "CSI002",
+      "can_form_relation": "CSI004"
+    }
+  },
+
+  "CSI002": {
+    "canonical_name": "Denomination",
+    "definition": "A symbolic, linguistic, or textual form used to designate a concept, entity, object, person, event, or structure.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "naming_structure",
+    "data_type": "string",
+    "aliases": [
+      "name",
+      "label",
+      "term",
+      "designation",
+      "nome",
+      "denominação"
+    ],
+    "exclusions": [
+      "The denomination is not the concept itself; it is a representational surface attached to the concept."
+    ],
+    "relations": {
+      "names": "CSI001",
+      "may_have_aliases": "CSI003"
+    }
+  },
+
+  "CSI003": {
+    "canonical_name": "Alias",
+    "definition": "An alternative denomination that points to the same underlying concept while varying by language, institution, document, culture, abbreviation, or context.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "alternative_name",
+    "data_type": "array",
+    "aliases": [
+      "synonym",
+      "variant",
+      "surface form",
+      "apelido",
+      "sinônimo",
+      "variante"
+    ],
+    "relations": {
+      "belongs_to": "CSI002",
+      "points_to": "CSI001"
+    }
+  },
+
+  "CSI004": {
+    "canonical_name": "Link",
+    "definition": "A minimal connection between two or more semantic units, indicating that they are not isolated and may be interpreted together.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "semantic_connection",
+    "data_type": "relation_pointer",
+    "aliases": [
+      "connection",
+      "bridge",
+      "link",
+      "vínculo",
+      "conexão"
+    ],
+    "relations": {
+      "connects": ["CSI001", "CSI001"],
+      "may_be_qualified_by": "CSI005"
+    }
+  },
+
+  "CSI005": {
+    "canonical_name": "Relation",
+    "definition": "A qualified link that describes how one semantic unit affects, contains, depends on, modifies, opposes, strengthens, weakens, generates, or contextualizes another semantic unit.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "qualified_connection",
+    "data_type": "semantic_relation",
+    "aliases": [
+      "relationship",
+      "association",
+      "dependency",
+      "causal link",
+      "relação",
+      "associação"
+    ],
+    "relation_types": [
+      "contains",
+      "belongs_to",
+      "depends_on",
+      "generates",
+      "modifies",
+      "strengthens",
+      "weakens",
+      "opposes",
+      "translates_to",
+      "represents",
+      "is_part_of"
+    ],
+    "relations": {
+      "qualifies": "CSI004",
+      "connects": ["CSI001", "CSI001"]
+    }
+  }
+}
