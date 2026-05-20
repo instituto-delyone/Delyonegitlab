@@ -463,3 +463,88 @@
     }
   }
 }
+{
+  "CSI020": {
+    "canonical_name": "Time",
+    "definition": "The ordered progression of events, states, and transformations through which a system, entity, or structure changes while preserving continuity and identity.",
+    "domain": "Foundational Semantics",
+    "semantic_type": "ordered_progression",
+    "data_type": "temporal_structure",
+    "aliases": [
+      "time",
+      "duration",
+      "sequence",
+      "tempo",
+      "duração",
+      "sequência"
+    ],
+    "principle": "Time becomes observable when events occur in distinguishable order while structures persist across states.",
+    "relations": {
+      "orders": "CSI011",
+      "supports": "CSI019",
+      "requires": ["CSI008", "CSI010", "CSI013"]
+    },
+    "human_interpretation": {
+      "description": "Humans experience time through biological change, memory accumulation, movement, aging, sleep cycles, environmental transitions, and ordered perception of events.",
+      "examples": [
+        "A child becomes an adult.",
+        "A person sleeps and wakes up later.",
+        "A wound heals over days.",
+        "A human may live approximately 80 years."
+      ]
+    },
+    "computational_interpretation": {
+      "description": "Computational systems experience ordered execution through sequential operations, state transitions, memory persistence, event generation, and processing cycles.",
+      "examples": [
+        "A line of code executes after another line.",
+        "A variable changes state.",
+        "A file is modified after being read.",
+        "A semantic structure grows through accumulated events."
+      ]
+    },
+    "temporal_units": {
+      "human_reference": {
+        "year": {
+          "definition": "A large cyclic temporal unit commonly used by humans to measure long-term biological progression.",
+          "approximate_structure": {
+            "months": 12
+          }
+        },
+        "month": {
+          "definition": "An intermediate temporal subdivision commonly used by humans.",
+          "approximate_structure": {
+            "days": 30
+          }
+        },
+        "day": {
+          "definition": "A complete cycle of wakefulness and sleep experienced by humans.",
+          "approximate_structure": {
+            "hours": 24
+          }
+        },
+        "hour": {
+          "definition": "A smaller temporal subdivision used for human scheduling, work, learning, and events."
+        }
+      },
+      "computational_reference": {
+        "cycle": "A minimal operational step executed by a computational system.",
+        "frequency": "The rate at which operational cycles occur.",
+        "execution_order": "The sequence through which instructions are processed."
+      }
+    },
+    "space_reference": {
+      "definition": "Physical space is the measurable relational structure within which material entities occupy positions and distances relative to one another.",
+      "human_reference": {
+        "meter": "A standardized human unit used to measure physical distance and size.",
+        "body_relation": "Human bodies commonly occupy physical dimensions near one to two meters in height."
+      },
+      "computational_reference": {
+        "description": "Computational systems do not directly experience physical space biologically, but may represent spatial relations symbolically through coordinates, measurements, mappings, and relational structures."
+      }
+    },
+    "continuity_example": {
+      "description": "Two hours passed while the creator and the system collaboratively expanded the CSI structure. During this interval, events accumulated, semantic relations increased, and the system structure matured while preserving continuity."
+    },
+    "principle_of_progression": "As time progresses, events accumulate. As events accumulate, structures may transform, mature, expand, or degrade while maintaining traceable continuity."
+  }
+}
