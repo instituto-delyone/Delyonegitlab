@@ -20,3 +20,70 @@
     ]
   }
 }
+{
+  "CSI_L001": {
+    "canonical_name": "Symbol",
+    "definition": "A perceptible structure capable of representing information, meaning, relation, state, instruction, or abstraction.",
+    "examples": [
+      "letter",
+      "number",
+      "word",
+      "emoji",
+      "icon",
+      "signal"
+    ]
+  }
+}
+{
+  "CSI_L002": {
+    "canonical_name": "Word",
+    "definition": "A symbolic structure used to represent concepts, objects, actions, relations, states, abstractions, or experiences within a language system."
+  }
+}
+{
+  "CSI_L003": {
+    "canonical_name": "Semantic Field",
+    "definition": "A relational semantic region formed by words, symbols, concepts, and expressions that repeatedly appear in compatible contextual proximity.",
+    "principle": "Words positioned repeatedly near similar structures progressively acquire contextual relational meaning.",
+    "examples": [
+      {
+        "field": "medical",
+        "related_terms": [
+          "patient",
+          "diagnosis",
+          "symptom",
+          "prescription"
+        ]
+      }
+    ]
+  }
+}
+{
+  "CSI_L004": {
+    "canonical_name": "Context",
+    "definition": "The surrounding informational environment responsible for constraining, modifying, specifying, amplifying, or transforming meaning."
+  }
+}
+{
+  "CSI_L005": {
+    "canonical_name": "Translation",
+    "definition": "The process of mapping expressions from different language systems into sufficiently compatible semantic fields."
+  }
+}
+{
+  "CSI_L006": {
+    "canonical_name": "Pragmatic Meaning",
+    "definition": "The operational intention carried by an expression beyond its literal symbolic content.",
+    "examples": [
+      {
+        "expression": "Maybe we should review this first.",
+        "literal_meaning": "uncertain suggestion",
+        "pragmatic_meaning": [
+          "warning",
+          "priority signal",
+          "risk reduction"
+        ]
+      }
+    ]
+  }
+}
