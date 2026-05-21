@@ -1,0 +1,7 @@
+{
+  "CSI_COMPUTATION_V0_1": {
+    "canonical_name": "CSI Computation Layer",
+    "definition": "A structural operational layer responsible for describing how information changes, moves, transforms, persists, executes, interacts, and generates new states inside computational systems.",
+    "principle": "Computation is the transformation of states through structured operations applied over information."
+  }
+}
