@@ -109,8 +109,8 @@
   function openLogin(){ modal.hidden = false; document.body.classList.add('modal-open'); }
   function closeLogin(){ modal.hidden = true; document.body.classList.remove('modal-open'); }
   function enterDemo(){
-    closeLogin(); main.closest('.app-shell').hidden = true; account.hidden = false;
-    $('loginTop').hidden = true; $('accountTop').hidden = false; window.scrollTo({top:0,behavior:'smooth'});
+    closeLogin();
+    window.location.href = "app.html";
   }
   function showToast(message){ const toast=$('toast'); toast.textContent=message; toast.classList.add('show'); window.setTimeout(()=>toast.classList.remove('show'),2600); }
   function closeMenu(){ sidebar.classList.remove('open'); scrim.classList.remove('visible'); menuToggle.setAttribute('aria-expanded','false'); }
