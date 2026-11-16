@@ -1,7 +1,136 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101b2b"><title>MedUnity — Página inicial</title><link rel="stylesheet" href="assets/css/home.css"></head>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b2b">
+  <meta name="description" content="MedUnity — ecossistema de medicina, ciência e tecnologia do Instituto Delyone.">
+  <title>MedUnity | Instituto Delyone</title>
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
 <body>
-<header class="topbar"><div class="brandline"><a class="hamb" href="menu-aberto.html" aria-label="Abrir menu"><i></i><i></i><i></i></a><a class="brand" href="index.html"><span class="logo">M</span><span>MedUnity<small>INSTITUTO DELYONE</small></span></a></div><a class="login" href="#acesso">Acessar</a></header>
-<div class="promo"><strong>Condição especial de lançamento para os 10 primeiros participantes</strong><a href="mailto:instituto@delyone.com.br?subject=Quero%20participar">Quero participar →</a></div>
-<main><section class="hero"><div><span class="eyebrow">MEDICINA · CIÊNCIA · TECNOLOGIA</span><h1>Uma nova forma de organizar sua <em>rotina médica.</em></h1><p>O MedUnity conecta ferramentas e recursos digitais em um ambiente pensado para apoiar o trabalho do profissional de saúde.</p><div class="actions"><a class="btn primary" href="#sobre">Conheça a plataforma</a><a class="btn secondary" href="#instituto">Sobre o Instituto</a></div></div><div class="preview"><div class="preview-head">MEDUNITY / VISÃO GERAL <span>● CONCEITO</span></div><h2>Seu ambiente de trabalho</h2><p>Uma plataforma. Diferentes recursos.</p><div class="tiles"><article>▤<b>Ferramentas clínicas</b><small>Recursos para sua rotina</small></article><article>◷<b>Organização</b><small>Fluxos de trabalho</small></article><article>⌘<b>Conhecimento</b><small>Ciência e tecnologia</small></article><article>✧<b>Ecossistema</b><small>Projetos Delyone</small></article></div></div></section>
-<section class="lower" id="sobre"><span class="eyebrow">UM ECOSSISTEMA EM DESENVOLVIMENTO</span><h2>Tecnologia que acompanha a prática.</h2><p>Uma apresentação do MedUnity e de sua proposta: aproximar medicina, organização clínica, pesquisa e inovação em uma experiência digital integrada.</p><div class="pillars"><article><b>Prática médica</b><small>Ferramentas digitais pensadas para apoiar processos do cotidiano profissional.</small></article><article id="instituto"><b>Pesquisa e inovação</b><small>Desenvolvimento contínuo na interseção entre saúde e tecnologia.</small></article><article><b>Instituto Delyone</b><small>Um ecossistema de projetos orientados por ciência, ética e tecnologia.</small></article></div></section><section class="lower" id="acesso"><h2>Entre no universo MedUnity</h2><p>Esta é uma prévia visual. O acesso às ferramentas operacionais será apresentado separadamente.</p></section></main><footer>MedUnity · Instituto Delyone de Medicina e Tecnologia · Protótipo visual sem integrações</footer></body></html>
+  <header class="topbar">
+    <div class="brandline">
+      <button class="hamb" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+      <a class="brand" href="#" aria-label="MedUnity — Instituto Delyone">
+        <span class="logo">D</span><span><strong>MedUnity</strong><small>INSTITUTO DELYONE</small></span>
+      </a>
+    </div>
+    <div class="top-actions">
+      <span class="top-context">MEDICINA · CIÊNCIA · TECNOLOGIA</span>
+      <button class="login" id="loginTop">Entrar</button>
+      <button class="account-trigger" id="accountTop" hidden>Minha conta</button>
+    </div>
+  </header>
+
+  <div class="promo"><span><b>Vantagem de lançamento</b> · condições especiais para os 10 primeiros participantes</span><a href="mailto:instituto@delyone.com.br?subject=MedUnity%20%7C%20Participar">Saiba mais <span aria-hidden="true">→</span></a></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+      <div class="side-kicker">ÁREA DE NAVEGAÇÃO</div>
+      <div class="side-brand"><span class="side-mark">D</span><span><b>Instituto Delyone</b><small>Ecossistema digital</small></span></div>
+      <nav>
+        <a class="nav-link active" href="#inicio" data-section="inicio"><span>⌂</span> Visão geral</a>
+        <a class="nav-link" href="#recursos" data-section="recursos"><span>▦</span> Recursos</a>
+        <a class="nav-link" href="#instituto" data-section="instituto"><span>⌘</span> Instituto Delyone</a>
+        <div class="nav-divider"></div>
+        <button class="nav-link" id="sideLogin"><span>↗</span> Entrar na plataforma</button>
+      </nav>
+      <div class="side-footer"><b>MedUnity</b><small>Uma plataforma do Instituto Delyone</small><a href="https://www.delyone.com" target="_blank" rel="noopener">delyone.com ↗</a></div>
+    </aside>
+    <button class="scrim" id="scrim" aria-label="Fechar menu"></button>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> INSTITUTO DELYONE DE MEDICINA E TECNOLOGIA</span>
+          <h1>Conhecimento, cuidado e tecnologia em <em>um só lugar.</em></h1>
+          <p>Um ambiente digital integrado para aproximar a prática médica, a pesquisa e a inovação — desenvolvido pelo Instituto Delyone.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="heroLogin">Entrar na plataforma <span>→</span></button>
+            <a class="btn btn-quiet" href="#instituto">Conhecer o IDMT</a>
+          </div>
+          <div class="trust-line"><span class="trust-dot"></span> Um ecossistema em evolução contínua</div>
+        </div>
+        <div class="hero-art" aria-label="Prévia ilustrativa da plataforma">
+          <div class="art-top"><span class="art-brand"><i>D</i> MEDUNITY</span><span class="art-status"><i></i> AMBIENTE DIGITAL</span></div>
+          <div class="art-welcome"><small>INSTITUTO DELYONE</small><h2>Seu espaço de trabalho.</h2><p>Ferramentas conectadas à sua rotina.</p></div>
+          <div class="art-grid">
+            <div class="art-card"><span class="art-icon">▤</span><b>MedUnit</b><small>Ambiente clínico</small></div>
+            <div class="art-card"><span class="art-icon">♙</span><b>Minha conta</b><small>Seu perfil e acesso</small></div>
+            <div class="art-card"><span class="art-icon">⌘</span><b>Pesquisa</b><small>Ciência e inovação</small></div>
+            <div class="art-card"><span class="art-icon">✧</span><b>Recursos</b><small>Novas ferramentas</small></div>
+          </div>
+          <div class="art-foot"><span>MEDICINA</span><span>CIÊNCIA</span><span>TECNOLOGIA</span></div>
+        </div>
+      </section>
+
+      <section class="platform-section" id="recursos">
+        <div class="section-heading"><div><span class="eyebrow">O ECOSSISTEMA</span><h2>Uma plataforma. Diferentes possibilidades.</h2></div><p>Os recursos serão organizados em um único ambiente, com acesso conforme o perfil e as permissões de cada usuário.</p></div>
+        <div class="resource-grid">
+          <article class="resource-card featured"><div class="resource-icon">▤</div><span class="card-tag">AMBIENTE CLÍNICO</span><h3>MedUnit</h3><p>Ferramentas para organização da rotina e dos fluxos de trabalho clínicos.</p><button class="text-link resource-access">Conhecer recurso <span>→</span></button></article>
+          <article class="resource-card"><div class="resource-icon">♙</div><span class="card-tag">ÁREA PESSOAL</span><h3>Minha conta</h3><p>Uma área central para informações de perfil, preferências e acesso.</p><button class="text-link resource-access">Acessar minha conta <span>→</span></button></article>
+          <article class="resource-card"><div class="resource-icon">⌘</div><span class="card-tag">CONHECIMENTO</span><h3>Pesquisa e inovação</h3><p>Projetos, conhecimento científico e desenvolvimento tecnológico.</p><a class="text-link" href="#instituto">Conhecer o IDMT <span>→</span></a></article>
+        </div>
+      </section>
+
+      <section class="institute-section" id="instituto">
+        <div class="institute-monogram">D</div><div><span class="eyebrow">INSTITUTO DELYONE</span><h2>Medicina orientada por ciência. Tecnologia guiada por propósito.</h2><p>O MedUnity integra o ecossistema do Instituto Delyone de Medicina e Tecnologia, conectando desenvolvimento, pesquisa e soluções digitais.</p><a class="text-link" href="https://www.delyone.com" target="_blank" rel="noopener">Conheça o Instituto <span>↗</span></a></div>
+      </section>
+
+      <footer><span>© Instituto Delyone de Medicina e Tecnologia</span><span>MedUnity · Medicina, ciência e tecnologia</span></footer>
+    </main>
+  </div>
+
+  <section class="account-view" id="accountView" hidden>
+    <div class="account-wrap">
+      <div class="account-heading"><span class="eyebrow">ÁREA DO USUÁRIO</span><h1>Minha conta</h1><p>Bem-vindo ao seu ambiente MedUnity.</p></div>
+      <div class="welcome-panel"><div class="welcome-avatar">D</div><div><small>SESSÃO DE DEMONSTRAÇÃO</small><h2>Olá! Que bom ter você aqui.</h2><p>Esta é uma prévia navegável. Nenhuma credencial ou dado pessoal foi solicitado.</p></div></div>
+      <div class="account-label">SEUS RECURSOS</div>
+      <div class="account-grid">
+        <article class="account-card medunit-card"><div class="resource-icon">▤</div><span class="card-tag">AMBIENTE CLÍNICO</span><h3>MedUnit</h3><p>Acesse o ambiente de ferramentas clínicas do MedUnity.</p><button class="btn btn-primary" id="openMedunit">Abrir MedUnit <span>→</span></button></article>
+        <article class="account-card"><div class="resource-icon">♙</div><span class="card-tag">ORGANIZAÇÃO</span><h3>Meus pacientes</h3><p>Área de acesso aos recursos de organização de pacientes.</p><button class="btn btn-outline" id="patientsSoon">Em desenvolvimento</button></article>
+        <article class="account-card"><div class="resource-icon">⚙</div><span class="card-tag">PREFERÊNCIAS</span><h3>Perfil e configurações</h3><p>Gerencie suas informações e preferências de acesso.</p><button class="btn btn-outline" id="profileSoon">Em desenvolvimento</button></article>
+      </div>
+      <button class="back-link" id="backHome">← Voltar à página inicial</button>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="loginModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="login-modal"><button class="modal-close" id="closeModal" aria-label="Fechar">×</button><span class="modal-mark">D</span><span class="eyebrow">INSTITUTO DELYONE</span><h2 id="modalTitle">Acesse o MedUnity</h2><p>Entre para conhecer a área do usuário em modo de demonstração.</p><div class="demo-note"><span>i</span> Esta prévia não solicita senha nem autentica usuários.</div><button class="btn btn-primary modal-continue" id="demoLogin">Entrar na demonstração <span>→</span></button></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const modal = $('loginModal'), account = $('accountView'), main = $('inicio');
+  const sidebar = $('sidebar'), scrim = $('scrim'), menuToggle = $('menuToggle');
+  function openLogin(){ modal.hidden = false; document.body.classList.add('modal-open'); }
+  function closeLogin(){ modal.hidden = true; document.body.classList.remove('modal-open'); }
+  function enterDemo(){
+    closeLogin(); main.closest('.app-shell').hidden = true; account.hidden = false;
+    $('loginTop').hidden = true; $('accountTop').hidden = false; window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function showToast(message){ const toast=$('toast'); toast.textContent=message; toast.classList.add('show'); window.setTimeout(()=>toast.classList.remove('show'),2600); }
+  function closeMenu(){ sidebar.classList.remove('open'); scrim.classList.remove('visible'); menuToggle.setAttribute('aria-expanded','false'); }
+  $('loginTop').addEventListener('click',openLogin);
+  $('heroLogin').addEventListener('click',openLogin);
+  $('sideLogin').addEventListener('click',openLogin);
+  $('closeModal').addEventListener('click',closeLogin);
+  $('demoLogin').addEventListener('click',enterDemo);
+  modal.addEventListener('click',e=>{if(e.target===modal)closeLogin();});
+  $('accountTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  $('backHome').addEventListener('click',()=>{account.hidden=true;main.closest('.app-shell').hidden=false;$('loginTop').hidden=false;$('accountTop').hidden=true;window.scrollTo({top:0,behavior:'smooth'});});
+  menuToggle.addEventListener('click',()=>{const open=!sidebar.classList.contains('open');sidebar.classList.toggle('open',open);scrim.classList.toggle('visible',open);menuToggle.setAttribute('aria-expanded',String(open));});
+  scrim.addEventListener('click',closeMenu);
+  document.querySelectorAll('.nav-link[href^="#"]').forEach(link=>link.addEventListener('click',()=>{closeMenu();document.querySelectorAll('.nav-link').forEach(n=>n.classList.remove('active'));link.classList.add('active');}));
+  document.querySelectorAll('.resource-access').forEach(button=>button.addEventListener('click',openLogin));
+  $('openMedunit').addEventListener('click',()=>showToast('O acesso operacional ao MedUnit será conectado nesta etapa do projeto.'));
+  $('patientsSoon').addEventListener('click',()=>showToast('A área Meus pacientes será desenvolvida em uma próxima etapa.'));
+  $('profileSoon').addEventListener('click',()=>showToast('As configurações de perfil serão adicionadas em uma próxima etapa.'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLogin();closeMenu();}});
+})();
+</script>
+</body>
+</html>
