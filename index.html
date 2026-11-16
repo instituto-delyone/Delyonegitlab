@@ -19,6 +19,7 @@
     <div class="top-actions">
       <span class="top-context">MEDICINA · CIÊNCIA · TECNOLOGIA</span>
       <button class="login" id="loginTop">Entrar</button>
+      <a class="create-account" id="createAccountTop" href="mailto:instituto@delyone.com.br?subject=MedUnity%20%7C%20Criar%20conta">Criar conta</a>
       <button class="account-trigger" id="accountTop" hidden>Minha conta</button>
     </div>
   </header>
@@ -97,7 +98,7 @@
   </section>
 
   <div class="modal-backdrop" id="loginModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="login-modal"><button class="modal-close" id="closeModal" aria-label="Fechar">×</button><span class="modal-mark">D</span><span class="eyebrow">INSTITUTO DELYONE</span><h2 id="modalTitle">Acesse o MedUnity</h2><p>Entre para conhecer a área do usuário em modo de demonstração.</p><div class="demo-note"><span>i</span> Esta prévia não solicita senha nem autentica usuários.</div><button class="btn btn-primary modal-continue" id="demoLogin">Entrar na demonstração <span>→</span></button></div>
+    <div class="login-modal"><button class="modal-close" id="closeModal" aria-label="Fechar">×</button><span class="modal-mark">D</span><span class="eyebrow">INSTITUTO DELYONE</span><h2 id="modalTitle">Acesse o MedUnity</h2><p>Escolha como deseja acessar o MedUnity.</p><label class="password-label" for="adminPassword">Senha de acesso</label><input class="password-input" id="adminPassword" type="password" autocomplete="current-password" placeholder="Digite sua senha"><div class="modal-options"><button class="btn btn-primary modal-continue" id="demoLogin">Testar demonstração <span>→</span></button><button class="btn btn-outline modal-admin" id="adminLogin">Login administrativo</button></div><div class="demo-note"><span>i</span> Ambiente experimental: a autenticação administrativa será conectada ao serviço real em uma etapa posterior.</div></div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -115,10 +116,12 @@
   function showToast(message){ const toast=$('toast'); toast.textContent=message; toast.classList.add('show'); window.setTimeout(()=>toast.classList.remove('show'),2600); }
   function closeMenu(){ sidebar.classList.remove('open'); scrim.classList.remove('visible'); menuToggle.setAttribute('aria-expanded','false'); }
   $('loginTop').addEventListener('click',openLogin);
+  $('createAccountTop').addEventListener('click',e=>{e.preventDefault();showToast('Para solicitar uma conta, escreva para instituto@delyone.com.br.');});
   $('heroLogin').addEventListener('click',openLogin);
   $('sideLogin').addEventListener('click',openLogin);
   $('closeModal').addEventListener('click',closeLogin);
   $('demoLogin').addEventListener('click',enterDemo);
+  $('adminLogin').addEventListener('click',()=>showToast('O login administrativo real será integrado após a aprovação desta interface.'));
   modal.addEventListener('click',e=>{if(e.target===modal)closeLogin();});
   $('accountTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
   $('backHome').addEventListener('click',()=>{account.hidden=true;main.closest('.app-shell').hidden=false;$('loginTop').hidden=false;$('accountTop').hidden=true;window.scrollTo({top:0,behavior:'smooth'});});
